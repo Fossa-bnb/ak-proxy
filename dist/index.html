@@ -10,8 +10,10 @@
     <script src="bundle.js"></script>
     <script src="http://localhost:3000/dist/bundle.js"></script>
     <script src="http://localhost:3001/dist/bundle.js"></script>
+    <script src="http://localhost:3002/dist/bundle.js"></script>
     <div id="photos"></div>
     <div id="reviews"></div>
+    <div id="reservations"></div>
 
     <script>
       ReactDOM.render(
@@ -22,6 +24,11 @@
       ReactDOM.render(
         React.createElement(window.Reviews, {id : 3}, null),
         document.getElementById('reviews')
+      );
+
+      ReactDOM.render(
+        React.createElement(window.Reservations, {id : 3}, null),
+        document.getElementById('reservations')
       );
     </script>
   </body>
