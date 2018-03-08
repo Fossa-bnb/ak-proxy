@@ -11,14 +11,23 @@
     <script src="http://localhost:3000/dist/bundle.js"></script>
     <script src="http://localhost:3001/dist/bundle.js"></script>
     <script src="http://localhost:3002/dist/bundle.js"></script>
+    <script src="http://localhost:3003/public/bundle.js"></script>
+
     <div id="photos"></div>
+    <div id="infopt1"></div>
     <div id="reviews"></div>
     <div id="reservations"></div>
+    <div id="infopt2"></div>
 
     <script>
       ReactDOM.render(
         React.createElement(window.Photos, {id : 3}, null),
         document.getElementById('photos')
+      );
+
+      ReactDOM.render(
+        React.createElement(window.InfoPart1, {id : 3}, null),
+        document.getElementById('infopt1')
       );
 
       ReactDOM.render(
@@ -29,6 +38,11 @@
       ReactDOM.render(
         React.createElement(window.Reservations, {id : 3}, null),
         document.getElementById('reservations')
+      );
+
+      ReactDOM.render(
+        React.createElement(window.InfoPart2, {id : 3}, null),
+        document.getElementById('infopt2')
       );
     </script>
   </body>
